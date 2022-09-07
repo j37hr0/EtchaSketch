@@ -1,17 +1,35 @@
 .body {
-    display: flex;
-    justify-content: center;
+margin: 0;padding: 0;
+display: flex 0 0 0;
+justify-content: center;
 }
 
 .container {
-    width: 960px;
-    height: 600px;
-    ;
+  width: 600px;
+  height: 600px;
+  margin-left: 40px;
+  margin-top: 40px;
+  padding: 2px;
+  margin: 0px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:0;
 }
+
+.game {
+  float: right;
+  box-sizing: content-box;
+  display: grid;
+  height: 49vw;
+  width: 49vw;
+}
+
 .cell {
     border: 1px solid gray;
-    min-width: 10px;
-    min-height: 20px;
+    min-width: 5px;
+    min-height: 8px;
     display: inline-block;
   }
 
@@ -21,5 +39,5 @@
 
   .reset {
     align-self: flex-start;
-    display: flex;
+
   }

@@ -7,11 +7,10 @@ defaultGrid()
 
 function resetButton() 
  {
+    container.replaceChildren()
     let gridSize = Number(prompt("Enter a grid size between 0 and 100: "))
         createGrid(gridSize)
     }
-
-
 
 function mouseOver() {
     let hoverCell = this;
@@ -24,8 +23,8 @@ function defaultGrid() {
 }
 
 function createGrid(size) {
-    makeRows(size);
-    makeColumns(size);
+    makeRows(size/4);
+    makeColumns(size/4);
 }
 
 
