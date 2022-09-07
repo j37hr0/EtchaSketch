@@ -1,0 +1,25 @@
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 960px;
+    height: 960px;
+    ;
+}
+.cell {
+    border: 1px solid gray;
+    min-width: 10px;
+    min-height: 20px;
+    display: inline-block;
+  }
+
+  .change {
+    background-color: aqua;
+  }
+
+  .reset {
+    align-self: flex-start;
+    display: flex;
+  }
