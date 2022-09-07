@@ -7,10 +7,10 @@ defaultGrid()
 
 function resetButton() 
  {
-    gridSize = Number(prompt("Enter a grid size: "))
-    createGrid(gridSize)
+    let gridSize = Number(prompt("Enter a grid size between 0 and 100: "))
+        createGrid(gridSize)
+    }
 
-}
 
 
 function mouseOver() {
