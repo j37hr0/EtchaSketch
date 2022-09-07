@@ -14,7 +14,7 @@ function resetButton()
 
 function mouseOver() {
     let hoverCell = this;
-    hoverCell.setAttribute("style", "background-color:blue")
+    hoverCell.setAttribute("style", "background-color:black")
 }
 
 function defaultGrid() {
@@ -23,8 +23,8 @@ function defaultGrid() {
 }
 
 function createGrid(size) {
-    makeRows(size/4);
-    makeColumns(size/4);
+    makeRows(size);
+    makeColumns(size);
 }
 
 
