@@ -29,10 +29,10 @@ function createGrid(gridSize) {
         child.style.border = "1px solid teal";
         container.appendChild(child);
         child.style.backgroundColor = "white";
-        let randomColor = Math.floor(Math. random()*16777215).toString(16);
         child.addEventListener('mouseover', () => {
+            let randomColor = Math.floor(Math.random()*16777215).toString(16);
             if (document.querySelector('select').value === "Rainbow") {
-                child.style.backgroundColor = randomColor;
+                child.style.backgroundColor = `#${randomColor}`;
             }
             else if (document.querySelector('select').value === "Pink") {
                 child.style.backgroundColor = "pink"
